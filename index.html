@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">TV Shop</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Find Your Dream TV</h2>
+            <p>Explore our premium models with stunning features and great offers.</p>
+            <button onclick="showMessage()">Start Shopping</button>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Why Choose Us?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <h3>Wide Range</h3>
+                <p>Choose from Smart TVs, OLED TVs, LED TVs, and more.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable Prices</h3>
+                <p>Get the best value for your money with unmatched offers.</p>
+            </div>
+            <div class="feature">
+                <h3>Customer Support</h3>
+                <p>24/7 assistance to ensure a seamless shopping experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="C:\Users\Admin\Desktop\23510043(2)\smart-tv.jpg" alt="Smart TV">
+                <h3>Smart TV</h3>
+                <p>4K Ultra HD, Smart Features</p>
+                <button onclick="showDetails('Smart TV')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Admin\Desktop\23510043(2)\led-tv.jpg" alt="LED TV">
+                <h3>LED TV</h3>
+                <p>Full HD, Compact Design</p>
+                <button onclick="showDetails('LED TV')">View Details</button>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\Admin\Desktop\23510043(2)\oled-tv.jpg" alt="OLED TV">
+                <h3>OLED TV</h3>
+                <p>Stunning Colors, Infinite Contrast</p>
+                <button onclick="showDetails('OLED TV')">View Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback" class="feedback-section">
+        <h2>Your Feedback</h2>
+        <form id="feedbackForm" onsubmit="submitFeedback(event)">
+            <textarea id="feedbackInput" placeholder="Share your thoughts..." required></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <div id="feedbackMessages"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact us: sanjanapardeshi65@gmail.com | Call: +123-456-789</p>
+            <p>Follow us: 
+                <a href="#" class="social-link">Facebook</a> | 
+                <a href="#" class="social-link">Twitter</a> | 
+                <a href="#" class="social-link">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
